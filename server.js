@@ -17,9 +17,9 @@ app.use(express.json());
 
 // middlewear route
 app.use("/api/user", require("./routes/user"));
+app.use("/api/product", require("./routes/product"));
 
 // 3-creation port   
 const PORT = process.env.PORT;
-
 // 4- create server
 app.listen(PORT , (err) => err ? console.error(err) : console.log(`server running on port ${PORT}..`));

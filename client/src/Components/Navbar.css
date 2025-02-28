@@ -1,0 +1,13 @@
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    font-size: 1.1rem; /* Slightly larger */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 15px;
+    color: white !important; /* Ensure high contrast */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff; /* White background */
+    color: #00aab3 !important; /* Highlight text color */
+}

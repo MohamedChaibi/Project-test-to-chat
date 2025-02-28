@@ -1,12 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './Profile.css';
 
 const Profile = () => {
-const user = useSelector((state) => state.userReducer.user);
+  // const user = useSelector((state) => state.userReducer.user);
   return (
-  <div>
-    <h2>{user.name}</h2>
-  </div>
+    <div className="profile">
+      <h1>Card</h1>
+      <p>Your cart is currently empty.</p>
+      <button className="shop-button" onClick={() => window.location.href = "/"}>
+        Shop Now
+      </button>
+    </div>
   );
 };
 
